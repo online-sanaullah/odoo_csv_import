@@ -5,7 +5,7 @@ import sys
 
 
 def get_server_connection(config_file):
-    config = ConfigParser.RawConfigParser({'protocol' : 'xmlrpc', 'port' : 8069})
+    config = ConfigParser.RawConfigParser({'protocol' : 'xmlrpc', 'port' : 8069, 'uid': 1})
     config.read(config_file)
 
     hostname = config.get('Connection', 'hostname')
